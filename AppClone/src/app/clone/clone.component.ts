@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CloneService } from './clone.service';
 
 @Component({
   selector: 'app-clone',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CloneComponent implements OnInit {
 
-  constructor() { }
+  private clones: any[] = [];
+
+  constructor(private alunosService: CloneService) { }
 
   ngOnInit() {
+    this.clones = this.alunosService.getClones();
   }
-
+ 
 }
