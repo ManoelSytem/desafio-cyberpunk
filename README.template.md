@@ -9,8 +9,11 @@ Linux & Windows
 
 Ambiente de Desenvolvimento
 
-Requisitos Instalando.
-Requisitos Typescript.
+Requisitos:
+Node.js
+Typescript.
+Angular CLI.
+
 
 ##Instalando Node.js
 
@@ -28,7 +31,7 @@ O Node.js já vem com npm gerenciador de pacotes.
 
 ## Instalando TYPESCRIPT
 
-windows  > npm npm install -g typescript
+windows  >npm install -g typescript
 Linux    $ sudo npm install -g typescript
 
 ## Instalando ANGULAR CLI
@@ -43,6 +46,13 @@ ng -v
 Editores de texto é preferencial. 
 O editor utilizado no nosso projeto foi o Visual Code. 
 
+## Install depedências. 
+
+Ao abrir o projeto execute o comando: npm install
+
+## Execute ambiente dev.
+
+ng server 
 
 ```
 ## Configuração

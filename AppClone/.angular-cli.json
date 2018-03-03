@@ -20,13 +20,11 @@
       "prefix": "app",
       "styles": [
         "../node_modules/materialize-css/dist/css/materialize.css",
-        "../node_modules/bootstrap/dist/css/style.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/materialize-css/dist/js/materialize.js",
-        "../node_modules/jquery/dist/init.js"
+        "../node_modules/materialize-css/dist/js/materialize.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
