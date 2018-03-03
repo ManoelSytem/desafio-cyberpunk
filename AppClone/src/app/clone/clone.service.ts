@@ -5,9 +5,7 @@ import { Clone } from './clone';
 export class CloneService {
   
   private clones: Clone[] = [
-    {id: 1, nome: 'Clone 01', idade: '23', dataCriacao:'16/03/1994', adicionais:'braço mecânico, esqueleto reforçado,'},
-    {id: 1, nome: 'Clone 01', idade: '23', dataCriacao:'16/03/1994', adicionais:'braço mecânico, esqueleto reforçado,'},
-    {id: 1, nome: 'Clone 01', idade: '23', dataCriacao:'16/03/1994', adicionais:'braço mecânico, esqueleto reforçado,'}
+     
   ];
 
   getClones(){

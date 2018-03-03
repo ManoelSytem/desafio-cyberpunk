@@ -1,3 +1,40 @@
-<p>
-  clone-forms novo works!
-</p>
+<div class="card-panel">
+  <h4 class="header2">Cadastro de Clones</h4>
+  <!--<p>Add class <code class="  language-markup">.right-alert</code> to show error message in right align.</p>
+  <!--add .right-alert to show messages right side-->
+  <div class="row">
+      <form  #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)" class="col s12 right-alert">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="mdi-action-account-circle prefix"></i>
+              <input id="first_input2" type="text" class="validate">
+              <label for="first_input2" data-error="Please enter first name." data-success="Perfect!" class="">Nome</label>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="input-field col s12">
+              <i class="mdi-action-verified-user prefix"></i>
+              <input id="age_input2" type="number" class="validate">
+              <label for="age_input2" data-error="Please enter your age." data-success="Wow!">Idade</label>
+            </div>
+        </div>
+        <div class = "row">  
+            <label>Data de Criação</label>              
+            <input type = "date" class = "datepicker" />     
+      </div> 
+ 
+  <div class="input-field col s12">
+      <select  name="profile" ngModel multiple [ngModel]="clone.PerfilClone" required #profile="ngModel">
+        <option *ngFor="let prf of allProfiles" [ngValue]="prf" >
+          {{ prf.prName }}
+        </option>
+      </select>
+      <label>Adicionais Multipla Seleção</label>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </form>
+  </div>
+</div>
